@@ -14,8 +14,8 @@ async def on_message(message):
     if message.content.startswith("hola"): 
         await message.channel.send("Buenas amo, puedo ayudarle en algo?")
         
-client.run("ODY2NzY1MzEyOTU5ODQwMjg2.Gv0Vnw.ZPMjsbLVaaApFBaq2KShBZnyhPjgseB3cSE5KE")
+client.run("ODY2NzY1MzEyOTU5ODQwMjg2.G876rI.WVJagPYEH5wA2o4kBAktc6D0rw7KuR4io9G-Yg")
 
 
 
-#ODY2NzY1MzEyOTU5ODQwMjg2.Gv0Vnw.ZPMjsbLVaaApFBaq2KShBZnyhPjgseB3cSE5KE
+#ODY2NzY1MzEyOTU5ODQwMjg2.G876rI.WVJagPYEH5wA2o4kBAktc6D0rw7KuR4io9G-Yg
