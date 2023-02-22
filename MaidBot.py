@@ -2,6 +2,7 @@ import discord
 import random
 import asyncio
 
+
 intents = discord.Intents.all()
 client = discord.Client(command_prefix='!', intents=intents)
 
@@ -55,7 +56,10 @@ async def on_message(message):
     else:
       await message.channel.send("Eso no es ninguna opción, porfavor vuelve a probar")
 
-      
+@client.event
+async def on_guild_join(member, guild):
+  await message.channel.send("Bienvenido {user} a {guild.name} espero que te lo pases muy bien!")
+  await message.channel.send.file("")
 
 
 client.run(
