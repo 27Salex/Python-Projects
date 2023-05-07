@@ -16,12 +16,12 @@ if os.path.isfile('info.txt'):
         website = input("For what is your password? ")
         userName = input("Please enter the user name: ")
         password = input("Please enter the password here: ")
-        encrypted_username = Fernet.encrypt(userName.encode())
-        encrypted_password = Fernet.encrypt(password.encode())
-        encrypted_web = Fernet.encrypt(website.encode())
-        usrnm = "UserName: " + encrypted_username + "\n"
-        pwd = "Password: " + encrypted_password + "\n"
-        web = "Website: " + encrypted_web + "\n"
+        encrypted_username = fernet.encrypt(userName.encode())
+        encrypted_password = fernet.encrypt(password.encode())
+        encrypted_web = fernet.encrypt(website.encode())
+        usrnm = encrypted_username + "\n"
+        pwd = encrypted_password + "\n"
+        web = + encrypted_web + "\n"
         with open("info.txt", 'ab') as file: # utiliza 'ab' para abrir el archivo en modo binario y añadir contenido al final
             file.write("---------------------------------\n".encode())
             file.write(web)
