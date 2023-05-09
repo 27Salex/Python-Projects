@@ -91,7 +91,7 @@ def checkWin():
 def start():
     clearCMD()
     print("Welcome to CMD Tic Tac Toe!")
-    menu = str(input("Type help for information or Play:   "))
+    menu = str(input("Type help for information or Play:   ")).casefold()
     if menu == "help" or menu == "Help":
         print("   |   |")
         print(" 0 | 1 | 2 ")

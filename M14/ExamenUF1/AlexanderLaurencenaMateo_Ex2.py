@@ -1,0 +1,5 @@
+print("Suma y producte")
+num1 =  float(input("Escriu el primer nombre:   "))
+num2 =  float(input("Escriu el segon nombre:   "))
+print( "La suma dels dos nombres es: ", num1 + num2)
+print( "El producte dels dos nombres es: ", num1 * num2)

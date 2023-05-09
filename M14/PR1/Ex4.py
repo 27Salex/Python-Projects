@@ -1,0 +1,5 @@
+print("Calculadora de minuts")
+secs = int(input("Introdueix  els segons que vols passar a minuts:   "))
+minuts = int(secs / 60 )
+segonsRestants =  int(secs % 60 )
+print("%d segons, son %d minuts amb %d Segons"  %(secs,minuts,segonsRestants))
